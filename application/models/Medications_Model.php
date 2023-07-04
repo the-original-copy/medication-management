@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Expenses_Model extends CI_Model{
+class Medications_Model extends CI_Model{
 
 // For adding expenses
 public function add($uid,$sdate,$medication,$dose){
@@ -14,13 +14,13 @@ $data=array(
 $query=$this->db->insert('tblmedication',$data);
 if($query){
 $this->session->set_flashdata('success','Medication added successfully.');	
-redirect('Expenses/add');
+redirect('Medications/add');
 } else {
 $this->session->set_flashdata('error','Something went wrong. Please try again.');	
-redirect('Expenses/add');	
+redirect('Medications/add');	
 }
 }
-//For Manage Expenses
+//For Manage Medication
 public function manage($uid)
 {
 	$query=$this->db->select('StartDate,Medication,Dose,NoteDate,ID')
@@ -29,13 +29,13 @@ public function manage($uid)
 	     return $query->result();
 }
 
-// For expense Deletion
+// For medication Deletion
 public function delete($uid){
 $query=$this->db->where('ID',$uid)
                 ->delete('tblmedication');
 }
 
-// For expense Edit
+// For medication Edit
 public function edit($uid){
 	$query=$this->db->where('ID',$uid)
 					->edit('tblmedication');
