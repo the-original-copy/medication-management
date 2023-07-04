@@ -6,7 +6,7 @@ error_reporting(0);
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daily Expense Tracker || Monthwise Expense Report</title>
+	<title>MediApp || Monthwise Medication Report</title>
 <?php echo link_tag('assets/css/bootstrap.min.css')?>
 	<?php echo link_tag('assets/css/datepicker3.css')?>
 	<?php echo link_tag('assets/css/styles.css')?>
