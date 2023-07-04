@@ -20,32 +20,32 @@ $sdate=$this->input->post('startdate');
 $medication=$this->input->post('medication');
 $dose=$this->input->post('dose');
 $uid=$this->session->userdata('uid');	
-$this->load->model('Expenses_Model');
-$this->Expenses_Model->add($uid,$sdate,$medication,$dose);
+$this->load->model('Medications_Model');
+$this->Medications_Model->add($uid,$sdate,$medication,$dose);
 } else{
-$this->load->view('add-expense');
+$this->load->view('add-medication');
 }
 }
 // Manage Expenses
 public function manage(){
 $uid=$this->session->userdata('uid');
-$this->load->model('Expenses_Model');
-$expdetails=$this->Expenses_Model->manage($uid);	
-$this->load->view('manage-expense',['expensedetails'=>$expdetails]);
+$this->load->model('Medicationss_Model');
+$expdetails=$this->Medications_Model->manage($uid);	
+$this->load->view('manage-medication',['expensedetails'=>$expdetails]);
 }
 //Delete Expenses
 public function delete($uid){
-$this->load->model('Expenses_Model');
-$this->Expenses_Model->delete($uid);
-$this->session->set_flashdata('success','Expense Record deleted');
-redirect('Expenses/manage');
+$this->load->model('Medications_Model');
+$this->Medications_Model->delete($uid);
+$this->session->set_flashdata('success','Medication Record deleted');
+redirect('Medications/manage');
 }
 //Delete Expenses
 public function edit($uid){
-    $this->load->model('Expenses_Model');
-    $this->Expenses_Model->edit($uid);
-    $this->session->set_flashdata('success','Expense Record Updated');
-    redirect('Expenses/manage');
+    $this->load->model('Medicationss_Model');
+    $this->Medications_Model->edit($uid);
+    $this->session->set_flashdata('success','Medication Record Updated');
+    redirect('Medications/manage');
 }
 
 }
