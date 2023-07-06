@@ -26,7 +26,7 @@ $this->load->view('expense-datewise-reports');
 }
 }
 
-//Month Wise Report dateselection
+//Month Wise Report date selection
 Public function monthwiserport(){
 //Form Validation
 		$this->form_validation->set_rules('fromdate','From Date','required');
