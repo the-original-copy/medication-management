@@ -27,7 +27,7 @@ error_reporting(0);
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Yearwise Expense Report</li>
+				<li class="active">Yearwise medication Report</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -40,7 +40,7 @@ error_reporting(0);
 				
 				
 				<div class="panel panel-default">
-					<div class="panel-heading">Yearwise Expense Report from <?php echo $fromdate;?> to <?php echo $todate;?></div>
+					<div class="panel-heading">Yearwise Expense medication from <?php echo $fromdate;?> to <?php echo $todate;?></div>
 					<div class="panel-body">
 
 						<div class="col-md-12">
