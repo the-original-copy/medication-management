@@ -8,7 +8,7 @@ if(!$this->session->userdata('uid'))
 redirect('login');
 }
 
-//Date Wise Report dateselection
+//Date Wise Report date selection
 Public function datewiserport(){
 //Form Validation
 		$this->form_validation->set_rules('fromdate','From Date','required');
