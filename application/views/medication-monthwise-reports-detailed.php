@@ -50,7 +50,7 @@ error_reporting(0);
                                             <tr>
               <th>S.NO</th>
               <th>Month-Year</th>
-              <th>Expense Amount</th>
+              <th>Medicationt</th>
                 </tr>
                                         </tr>
                                         </thead>
