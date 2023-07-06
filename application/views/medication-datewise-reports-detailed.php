@@ -51,9 +51,9 @@ error_reporting(0);
                                         <thead>
                                         <tr>
                                             <tr>
-              <th>Start Date</th>
+              <th>S.NO</th>
               <th>Date</th>
-              <th>Expense Amount</th>
+              <th>Medication</th>
                 </tr>
                                         </tr>
                                         </thead>
