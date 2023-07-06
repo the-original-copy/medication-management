@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daily Expense Tracker - Dashboard</title>
+	<title>Dashboard</title>
 	<?php echo link_tag('assets/css/bootstrap.min.css')?>
 	<?php echo link_tag('assets/css/datepicker3.css')?>
 	<?php echo link_tag('assets/css/styles.css')?>
