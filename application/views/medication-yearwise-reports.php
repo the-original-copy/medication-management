@@ -24,7 +24,7 @@
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Yearwise Expense Report</li>
+				<li class="active">Yearwise medication Report</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -37,7 +37,7 @@
 				
 				
 				<div class="panel panel-default">
-					<div class="panel-heading">Yearwise Expense Report</div>
+					<div class="panel-heading">Yearwise medication Report</div>
 					<div class="panel-body">
 
 						<div class="col-md-12">
