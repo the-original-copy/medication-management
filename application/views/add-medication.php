@@ -58,7 +58,7 @@
 
 						<div class="col-md-12">
 							
-<?php echo form_open('Expenses/add',['name'=>'addexpense']);?>
+<?php echo form_open('Medications/add',['name'=>'addmedication']);?>
 
 					
 								<div class="form-group">
