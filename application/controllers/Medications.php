@@ -26,21 +26,21 @@ $this->Medications_Model->add($uid,$sdate,$medication,$dose);
 $this->load->view('add-medication');
 }
 }
-// Manage Expenses
+// Manage medication
 public function manage(){
 $uid=$this->session->userdata('uid');
 $this->load->model('Medicationss_Model');
 $expdetails=$this->Medications_Model->manage($uid);	
 $this->load->view('manage-medication',['expensedetails'=>$expdetails]);
 }
-//Delete Expenses
+//Delete medication
 public function delete($uid){
 $this->load->model('Medications_Model');
 $this->Medications_Model->delete($uid);
 $this->session->set_flashdata('success','Medication Record deleted');
 redirect('Medications/manage');
 }
-//Delete Expenses
+//Delete medication
 public function edit($uid){
     $this->load->model('Medicationss_Model');
     $this->Medications_Model->edit($uid);
