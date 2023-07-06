@@ -26,7 +26,7 @@ error_reporting(0);
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Datewise Expense Report</li>
+				<li class="active">Datewise Medication Report</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -39,19 +39,19 @@ error_reporting(0);
 				
 				
 				<div class="panel panel-default">
-					<div class="panel-heading">Datewise Expense Report</div>
+					<div class="panel-heading">Datewise Medication Report</div>
 					<div class="panel-body">
 
 						<div class="col-md-12">
 					
 
-<h5 align="center" style="color:blue">Datewise Expense Report from <?php echo $fromdate;?> to <?php echo $todate;?></h5>
+<h5 align="center" style="color:blue">Datewise Medication Report from <?php echo $fromdate;?> to <?php echo $todate;?></h5>
 <hr />
                                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                         <thead>
                                         <tr>
                                             <tr>
-              <th>S.NO</th>
+              <th>Start Date</th>
               <th>Date</th>
               <th>Expense Amount</th>
                 </tr>
