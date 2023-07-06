@@ -22,7 +22,7 @@
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Datewise Expense Report</li>
+				<li class="active">Datewise Medication Report</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -35,7 +35,7 @@
 				
 				
 				<div class="panel panel-default">
-					<div class="panel-heading">Datewise Expense Report</div>
+					<div class="panel-heading">Datewise Medication Report</div>
 					<div class="panel-body">
 	
 						<div class="col-md-12">
