@@ -17,7 +17,7 @@ public function index(){
 	
 }
 
-//For Updating Profile
+//For Updating User Profile
 public function updateprofile(){
 	//Form Validation
 		$this->form_validation->set_rules('firstname','First Name','required|alpha');
