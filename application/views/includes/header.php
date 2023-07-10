@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="dashboard.php"><span>MEDIAPP</span></a>
+                <a class="navbar-brand" href="dashboard.php"><span>MediApp</span></a>
                 
             </div>
             
