@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MediApp Manage Medication</title>
+	<title>Medication List</title>
 <?php echo link_tag('assets/css/bootstrap.min.css')?>
 	<?php echo link_tag('assets/css/datepicker3.css')?>
 	<?php echo link_tag('assets/css/styles.css')?>
@@ -27,7 +26,7 @@
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Medication</li>
+				<li class="active">Medication List</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -40,7 +39,7 @@
 				
 				
 				<div class="panel panel-default">
-					<div class="panel-heading">Medication</div>
+					<div class="panel-heading">Medication List</div>
 					<div class="panel-body">
 	<!--success message -->
 <?php if($this->session->flashdata('success')){?>
@@ -52,7 +51,7 @@
             <table class="table table-bordered mg-b-0">
               <thead>
                 <tr>
-                  <th>S.NO</th>
+                  <th>ID</th>
                   <th>Medication</th>
                   <th>Dosage</th>
                   <th>Start Date</th>
@@ -74,6 +73,7 @@ foreach($expensedetails as $row):
                   <td><?php  echo $row->StartDate;?></td>
                   <td><?php  echo $row->NoteDate?></td>
                   <td><?php echo anchor("Expenses/delete/{$row->ID}",'Delete',); ?>
+			      <td><?php echo anchor("Updatemedication/{$row->ID}",'Update',); ?>
 
                   </td>
                 </tr>
