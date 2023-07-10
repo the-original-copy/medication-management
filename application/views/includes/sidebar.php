@@ -1,4 +1,3 @@
-
 <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
         <div class="profile-sidebar">
             <div class="profile-userpic">
@@ -21,37 +20,14 @@ $fname=$this->session->userdata('fname');
             
             
            
-            <li class="parent "><a data-toggle="collapse" href="#sub-item-1">
-                <em class="fa fa-navicon">&nbsp;</em>Medications<span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
-                </a>
-                <ul class="children collapse" id="sub-item-1">
+            
                     <li><a class="" href="<?php echo site_url('Expenses/add');?>">
                         <span class="fa fa-arrow-right">&nbsp;</span> Add medication
                     </a></li>
                     <li><a class="" href="<?php echo site_url('Expenses/manage');?>">
                         <span class="fa fa-arrow-right">&nbsp;</span> Manage medication
                     </a></li>
-                    
-                </ul>
-
-            </li>
-           
-  <li class="parent "><a data-toggle="collapse" href="#sub-item-2">
-                <em class="fa fa-navicon">&nbsp;</em>Medication Report <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
-                </a>
-                <ul class="children collapse" id="sub-item-2">
-                    <li><a class="" href="<?php echo site_url('Reports/datewiserport');?>">
-                        <span class="fa fa-arrow-right">&nbsp;</span> Daily Report
-                    </a></li>
-                    <li><a class="" href="<?php echo site_url('Reports/monthwiserport');?>">
-                        <span class="fa fa-arrow-right">&nbsp;</span> Monthly Report
-                    </a></li>
-                    <li><a class="" href="<?php echo site_url('Reports/yearwiserport');?>">
-                        <span class="fa fa-arrow-right">&nbsp;</span> Yearly Report
-                    </a></li>
-                    
-                </ul>
-            </li>
+                
 
 
 
