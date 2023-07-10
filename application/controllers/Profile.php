@@ -23,15 +23,17 @@ public function updateprofile(){
 		$this->form_validation->set_rules('firstname','First Name','required|alpha');
 		$this->form_validation->set_rules('lastname','Last Name','required|alpha');
 		$this->form_validation->set_rules('MobileNumber','Mobile Number','required|exact_length[10]');
+		$this->form_validation->set_rules('dob','DOB','required|alpha');
 		if($this->form_validation->run())
 		{
 			//Getting Post Values
 			$fname=$this->input->post('firstname');
 			$lname=$this->input->post('lastname');
 			$mobno=$this->input->post('MobileNumber');
+			$dob=$this->input->post('dob');
 			$uid=$this->session->userdata('uid');
 			$this->load->model('Profile_Model');
-			$profiledetails=$this->Profile_Model->updateprofile($uid,$fname,$lname,$mobno);
+			$profiledetails=$this->Profile_Model->updateprofile($uid,$fname,$lname,$mobno,$dob);
 $this->session->set_flashdata('success','Profile updated successfull');
 redirect('Profile');
 			

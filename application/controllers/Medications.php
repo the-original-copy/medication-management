@@ -29,7 +29,7 @@ $this->load->view('add-medication');
 // Manage medication
 public function manage(){
 $uid=$this->session->userdata('uid');
-$this->load->model('Medicationss_Model');
+$this->load->model('Medications_Model');
 $expdetails=$this->Medications_Model->manage($uid);	
 $this->load->view('manage-medication',['expensedetails'=>$expdetails]);
 }
@@ -40,12 +40,12 @@ $this->Medications_Model->delete($uid);
 $this->session->set_flashdata('success','Medication Record deleted');
 redirect('Medications/manage');
 }
-//Delete medication
-public function edit($uid){
-    $this->load->model('Medicationss_Model');
-    $this->Medications_Model->edit($uid);
-    $this->session->set_flashdata('success','Medication Record Updated');
-    redirect('Medications/manage');
+
+public function updatemedication($uid){
+    $this->load->model('Updatemedication_Model');
+    $this->Updatemedication_Model->updatemedication($uid);
+    $this->session->set_flashdata('success','Medication Record updated');
+    $this->load->view('update-medication');
 }
 
 }
