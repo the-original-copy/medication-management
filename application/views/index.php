@@ -1,26 +1,35 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MediApp - Login</title>
-	<?php echo link_tag('assets/css/bootstrap.min.css')?>
-	<?php echo link_tag('assets/css/datepicker3.css')?>
-	<?php echo link_tag('assets/css/styles.css')?>
+	  <!-- Required meta tags -->
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MediApp||Login</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="" />
 
 	
 </head>
 <body>
 
-	<div class="row">
-			<h2 align="center">MediApp</h2>
-	<hr />
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
-				<div class="panel-heading">Sign In</div>
-				<div class="panel-body">
-					<p style="font-size:16px; color:red" align="center">  </p>
+<div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth">
+        <div class="row w-100">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left p-5">
+              <div class="brand-logo">
+                  <h3 class="text-center text-primary mb-1">MediApp User Login</h3>
+                  <div class="text-center"><small class="text-muted font-weight-bold">Please enter you credentials</small></div>
+              </div>
 			
 <?php
 if($this->session->flashdata('error')){ ?>
@@ -31,24 +40,24 @@ if($this->session->flashdata('error')){ ?>
 
 						<fieldset>
 							<div class="form-group">
-						<?php echo form_input(['name'=>'email','id'=>'email','class'=>'form-control','placeholder'=>'Enter registered Email address','value'=>set_value('email')]);?>
+						
+<?php echo form_input(['name'=>'email','id'=>'email','class'=>'form-control','placeholder'=>'Enter email ','value'=>set_value('email')]);?>
 <?php echo form_error('email','<div style="color:red">','<div>')?>
 							</div>
-
+		<a href="<?php echo site_url('Resetpassword');?>">Forgot Password?</a>
 							<div class="form-group">
-							<?php echo form_password(['name'=>'password','id'=>'password','class'=>'form-control','placeholder'=>'Enter Password','value'=>set_value('password')]);?>
+							
+<?php echo form_password(['name'=>'password','id'=>'password','class'=>'form-control','placeholder'=>'Enter the Password','value'=>set_value('password')]);?>
 <?php echo form_error('password','<div style="color:red">','<div>')?>	
-                            </div>
+
+							</div>
 							<div class="checkbox">
 
-							<a href="<?php echo site_url('Resetpassword');?>">Forgot Password?</a>
-							<br><br>
-
-<?php echo form_submit(['name'=>'login','id'=>'login','class'=>'btn btn-primary','value'=>'Login']);?>	
+<?php echo form_submit(['name'=>'login','id'=>'login','class'=>'btn btn-block btn-gradient-info rounded-0 btn-lg font-weight-medium auth-form-btn','value'=>'login']);?>	
 								
 									<hr />
-							<p style="color:blue">Don't have an account? 
-								<a href="<?php echo site_url('Signup');?>"> Register Here</a></p>
+							<p style="color:blue">Not registered yet ? 
+								<a href="<?php echo site_url('Signup');?>"> Registere Here</a></p>
 							</div>
 							</fieldset>
 					<?php echo form_close();?>
@@ -57,9 +66,19 @@ if($this->session->flashdata('error')){ ?>
 		</div><!-- /.col-->
 	</div><!-- /.row -->	
 	
-
-<script src="<?php echo base_url('assets/js/jquery-1.11.1.min.js');?>"></script>
+	<script src="<?php echo base_url() ?>assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="<?php echo base_url() ?>assets/vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="<?php echo base_url() ?>assets/js/off-canvas.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/misc.js"></script>
+  <!-- endinject -->
+  <script src="<?php echo base_url('assets/js/jquery-1.11.1.min.js');?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
+
 
 </body>
 </html>
+
+
+
