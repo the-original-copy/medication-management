@@ -35,9 +35,5 @@ $query=$this->db->where('ID',$uid)
                 ->delete('tblmedication');
 }
 
-// For medication Edit
-public function edit($uid){
-	$query=$this->db->where('ID',$uid)
-					->edit('tblmedication');
-	}
+
 }
