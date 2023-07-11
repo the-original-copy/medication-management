@@ -11,11 +11,11 @@ MediApp is a medication scheduling web application built with PHP on CodeIgniter
 # Usage  
 To create an account and start scheduling your medications in MediApp, follow these steps:
 
-1. Open your web browser and navigate to the MediApp URL
-2. Click on the "Register" button to create a new account
-3. Fill in the required information, such as your name, email address, and password
-4. Click the "Register" button to create your account
-5. Once you've created your account, you'll be taken to the dashboard where you can begin scheduling your medications
+1. Open your web browser and navigate to the MediApp URL.
+2. Click on the "Register" button to create a new account.
+3. Fill in the required information, such as your name, email address, and password.
+4. Click the "Register" button to create your account.
+5. Once you've created your account, you'll be taken to the dashboard where you can begin scheduling your medications.
 Click on the "Add Medication" button to add a new medication
 Enter the name, dosage, and frequency of the medication
 Click the "Save" button to save the medication
