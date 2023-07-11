@@ -4,7 +4,7 @@ MediApp is a medication scheduling web application built with PHP on CodeIgniter
 # Installation
 1. Clone the repository: git clone https://github.com/username/MediApp.git
 2. Install dependencies: composer install
-Import the database.sql file into your MySQL database
+3. Import the database.sql file into your MySQL database
 Copy the config.example.php file to config.php and update the database configuration variables
 Start the XAMPP Apache and MySQL servers
 Navigate to http://localhost/MediApp in your web browser
