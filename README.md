@@ -16,7 +16,7 @@ To create an account and start scheduling your medications in MediApp, follow th
 3. Fill in the required information, such as your name, email address, and password.
 4. Click the "Register" button to create your account.
 5. Once you've created your account, you'll be taken to the dashboard where you can begin scheduling your medications.
-Click on the "Add Medication" button to add a new medication
+6. Click on the "Add Medication" button to add a new medication.
 Enter the name, dosage, and frequency of the medication
 Click the "Save" button to save the medication
 MediApp will send you reminders when it's time to take your medication based on the frequency you set
