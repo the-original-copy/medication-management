@@ -59,7 +59,7 @@
 							</div>
 							<div class="form-group">
 
-<?php echo form_input(['name'=>'email','id'=>'email','class'=>'form-control','placeholder'=>'Enter  valid email id','value'=>set_value('email')]);?>
+<?php echo form_input(['name'=>'email','id'=>'email','class'=>'form-control','placeholder'=>'Enter  valid email address','value'=>set_value('email')]);?>
 <?php echo form_error('email','<div style="color:red">','<div>')?>								
 							</div>
 							<div class="form-group">
