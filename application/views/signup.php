@@ -69,7 +69,7 @@
 							</div>
 							<div class="form-group">
 
-<?php echo form_password(['name'=>'newpassword','id'=>'newpassword','class'=>'form-control','placeholder'=>'Enter the Password','value'=>set_value('newpassword')]);?>	
+<?php echo form_password(['name'=>'newpassword','id'=>'newpassword','class'=>'form-control','placeholder'=>'Enter 8 character Password','value'=>set_value('newpassword')]);?>	
 <?php echo form_error('newpassword','<div style="color:red">','<div>')?>
 
 							</div>
