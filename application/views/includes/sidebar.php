@@ -24,7 +24,7 @@ $fname=$this->session->userdata('fname');
                     <li><a class="" href="<?php echo site_url('medication/add');?>">
                         <span class="fa fa-arrow-right">&nbsp;</span> Add medication
                     </a></li>
-                    <li><a class="" href="<?php echo site_url('Expes/manage');?>">
+                    <li><a class="" href="<?php echo site_url('medication/manage');?>">
                         <span class="fa fa-arrow-right">&nbsp;</span> Manage medication
                     </a></li>
                 
