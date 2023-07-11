@@ -8,3 +8,4 @@ MediApp is a medication scheduling web application built with PHP on CodeIgniter
 4. Copy the config.example.php file to config.php and update the database configuration variables.
 5. Start the XAMPP Apache and MySQL servers.
 6. Navigate to http://localhost/MediApp in your web browser.
+# Usage   
