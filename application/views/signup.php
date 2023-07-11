@@ -82,7 +82,7 @@
 					
 
 <?php echo form_submit(['name'=>'submit','id'=>'submit','class'=>'btn btn-block btn-gradient-info rounded-0 btn-lg font-weight-medium auth-form-btn','value'=>'Submit']);?>
-<p style="color:blue"> Already Registered <a href="<?php echo site_url('Login');?>">Login</a></p>
+<p style="color:blue"> Already Registered? <a href="<?php echo site_url('Login');?>">Login</a></p>
 								
 							</div>
 							 </fieldset>
