@@ -21,3 +21,4 @@ To create an account and start scheduling your medications in MediApp, follow th
 8. Click the "Add" button to save the medication.
 9. MediApp will send you reminders when it's time to take your medication based on the frequency you set.
 # License
+This project is licensed under the MIT License
